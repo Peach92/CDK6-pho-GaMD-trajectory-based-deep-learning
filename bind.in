@@ -1,0 +1,9 @@
+Input file for running PB and GB in serial
+&general
+   startfram=1, endframe=400, keep_files=2,
+/
+&gb
+  igb=5, saltcon=0.100, ifqnt=1,
+  qm_residue='91,292',
+  qm_theory='PM3'
+/

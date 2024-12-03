@@ -1,0 +1,5 @@
+parm ../comp.prmtop
+trajin nowat.nc
+reference ../comp.pdb
+rms reference :1-291@CA
+projection modes evecs3.dat out project3.dat beg 1 end 2 :1-291@CA

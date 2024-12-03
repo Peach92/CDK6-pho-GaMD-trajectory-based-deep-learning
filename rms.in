@@ -1,0 +1,5 @@
+parm ../comp.prmtop
+trajin nowatgamd1.nc
+reference ../comp.pdb :1-292&!@H=
+rms reference mass out rmsd-gmd1.dat :1-291&!@H=
+rms first mass nofit  out rmsd-lig-gmd1.dat :292&!@H=

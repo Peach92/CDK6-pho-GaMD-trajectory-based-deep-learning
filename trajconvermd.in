@@ -1,0 +1,15 @@
+parm ../comp.prmtop
+#Frame     RMSD_00001
+#trajin ../md1.nc
+trajin ../md1/md1.nc 1 200000 1000
+trajin ../md2/md2.nc 1 200000 1000
+#trajin ../md3/05-cmd.nc 100000 200000 1
+#center :1-54 origin
+#image origin
+autoimage triclinic
+strip :WAT
+strip :Cl-
+strip :Na+
+trajout nowat.mdcrd trajectory nobox
+ 
+

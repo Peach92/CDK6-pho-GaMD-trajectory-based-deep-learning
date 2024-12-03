@@ -1,0 +1,11 @@
+Sample input file with decomposition analysis
+&general
+startframe=1, endframe=400, interval=1,
+/
+&gb
+igb=5, saltcon=0.150,
+/
+&decomp
+idecomp=2, dec_verbose=3,
+print_res="1-292"
+/

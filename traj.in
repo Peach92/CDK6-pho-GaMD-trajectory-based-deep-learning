@@ -1,0 +1,76 @@
+parm ../comp.prmtop
+trajin nowat.nc
+radgyr out gry.dat :1-291&!@H=
+surf :1-291 out surf.dat
+#distance 51-134 :51@CA :134@CA out 51-134.dat 
+#distance 14-160 :14@CA :160@CA out 14-160.dat 
+#distance 14-157 :14@CA :157@CA out 14-157.dat 
+#distance 14-153 :14@CA :153@CA out 14-153.dat 
+#distance 13-156 :13@CA :156@CA out 13-156.dat
+#distance 50-156 :50@CA :156@CA out 50-156.dat
+#distance 57-167 :57@CA :167@CA out 57-167.dat
+#distance 60-166 :60@CA :166@CA out 60-166.dat 
+#distance 49-171 :49@CA :171@CA out 49-171.dat
+#distance 139-171 :139@CA :171@CA out 139-171.dat 
+#distance 134-162 :134@CA :162@CA out 134-162.dat
+#
+#hbond  cdk61 out cdk61.dat donormask :1-291 acceptormask :292 dist 3.5 angle 120 \
+#   avgout cdk61-avghb.dat
+#hbond  cdk62 out cdk62.dat donormask :292 acceptormask :1-291 dist 3.5 angle 120 \
+#   avgout cdk62-avghb.dat
+#dihedral phi1 :164@C :165@N :165@CA :165@C out phi165.dat
+#dihedral psi1 :165@N :165@CA :165@C :166@N out psi165.dat
+#hist phi1 psi1 min -180 max 180 bins 72 out 165.gnu free 300
+
+
+#distance af-cloop :190-195@CA :134-136@CA out af-cloop.dat
+
+#dihedral phi1 :163@C :164@N :164@CA :164@C out phi164.dat
+#dihedral psi1 :164@N :164@CA :164@C :165@N out psi164.dat
+#hist phi1 psi1 min -180 max 180 bins 72 out m164.gnu free 300
+#
+#dihedral phi2 :166@C :167@N :167@CA :167@C out phi167.dat
+#dihedral psi2 :167@N :167@CA :167@C :168@N out psi167.dat
+#hist phi2 psi2 min -180 max 180 bins 72 out t167.gnu free 300
+
+
+#dihedral phi1 :165@C :166@N :166@CA :166@C out phi166.dat
+#dihedral psi1 :166@N :166@CA :166@C :167@N out psi166.dat
+#hist phi1 psi1 min -180 max 180 bins 72 out l166.gnu free 300
+
+
+#distance ae-cloop :109-129@CA :132-144@CA out ae-cloop2.dat
+#distance ae-af :109-129@CA :188-203@CA out ae-af2.dat
+
+
+#distance ae-cloop :127-129@CA :131-134@CA out ae-cloop.dat
+#distance ae-af :127-129@CA :188-193@CA out ae-af.dat
+
+
+#dihedral phi1 :164@C :165@N :165@CA :165@C out phi1.dat
+#dihedral psi1 :165@N :165@CA :165@C :166@N out psi1.dat
+#hist phi1 psi1 min -180 max 180 bins 72 out m164.gnu free 300
+
+
+
+#dihedral phi1 :51@C :52@N :52@CA :52@C out phi1.dat
+#dihedral psi1 :52@N :52@CA :52@C :53@N out psi1.dat
+#hist phi1 psi1 min -180 max 180 bins 72 out e51.gnu free 300
+#distance 139-22 :139@CA :22@CA out 139-22.dat
+#distance 77-80 :77@CA :80@CA out 77-80.dat
+#distance 84-44 :84@CA :44@CA out 84-44.dat
+#distance 70-28 :70@CA :28@CA out 70-28.dat
+#distance 75-44 :75@CA :44@CA out 75-44.dat 
+#distance 134-186 :134@CA :186@CA out 134-186.dat
+#distance 70-30 :70@CD2 :30@CG2 out 70-30.dat
+#distance 67-142 :67@CB :142@CD1 out 67-142.dat
+#distance 51-153 :51@OE1 :153@OD1 out 51-153.dat
+#distance 193-209 :193@CZ2 :209@CE2 out 193-209.dat
+#distance 13-153 :13@N :153@OD2 out 13-153.dat
+#distance 14-156 :14@CA :156@CA out 14-156.dat 
+#distance 136-191 :136@CA :191@CA out 136-191.dat 
+#distance 193-209 :193@CA :209@CA out 193-209.dat 
+#distance 164-49 :164@CA :49@CA out 164-49.dat 
+#distance 167-50 :167@CA :50@CA out 167-50.dat 
+#distance 106-205 :106@CA :205@CA out 106-205.dat 
+#distance 166-160 :166@CA :160@CA out 166-160.dat 

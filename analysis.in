@@ -1,0 +1,25 @@
+parm ../comp.prmtop
+trajin nowat.nc
+reference ../comp.pdb
+#dihedral 176chi1 :176@N :176@CA :176@CB :176@CG out 176chi1.dat
+#distance 167-134 :167@CA :134@CA out 167-134.dat 
+#dihedral 140chi1 :140@N :140@CA :140@CB :140@CG out 140chi1.dat
+#dihedral 50chi1 :50@N :50@CA :50@CB :50@CG out 50chi1.dat
+#dihedral 158chi1 :158@N :158@CA :158@CB :158@CG out 158chi1.dat
+#dihedral 134chi1 :134@N :134@CA :134@CB :134@CG out 134chi1.dat
+#dihedral 167chi1 :167@N :167@CA :167@CB :167@OG1 out 167chi1.dat
+#dihedral 186chi1 :186@N :186@CA :186@CB :186@CG out 186chi1.dat
+#dihedral 164chi1 :164@N :164@CA :164@CB :164@CG out 164chi1.dat
+#rms reference :153-174@CA
+#rms reference mass out rmsd-beta3.dat :1-38&!@H=
+#rms reference mass out rmsd-alphac.dat :46-61&!@H=
+#rms reference mass out rmsd-tloop.dat :153-174&!@H=
+#dihedral 135chi1 :135@N :135@CA :135@CB :135@CG out 135chi1.dat
+#dihedral 137chi1 :137@N :137@CA :137@CB :137@CG out 137chi1.dat
+#rms first mass nofit  out rmsd-lig.dat :292&!@H=
+#rms first mass nofit out rmsd-lig3.dat :292&!@H=
+#atomicfluct out rmsf.dat :1-291@CA byres
+#matrix correl :1-291@CA name m3 out m3.dat byatom
+#matrix covar :1-291@CA name lig3 out lig3.dat
+#analyze matrix lig3 out evecs3.dat vecs 40
+#
